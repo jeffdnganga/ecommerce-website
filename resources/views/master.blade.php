@@ -11,19 +11,30 @@
 </head>
 <body>
 
+    {{View::make('header')}}
+    @yield('content')
+    {{View::make('footer')}}
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- latest compiled and minified javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-
-<script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            alert("We're ready to go!")
-        })
-    })
-</script>
+<style>
+    .custom-login{
+        height: 500px;
+        padding-top: 100px;
+    }
+</style>
 
 </html>
